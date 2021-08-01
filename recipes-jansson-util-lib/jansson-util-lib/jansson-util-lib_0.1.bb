@@ -11,5 +11,5 @@ S = "${WORKDIR}/src"
 
 inherit autotools
 
-DEPENDS = "jansson-util-lib"
-RDEPENDS_${PN} = "jansson-util-lib"
+DEPENDS = "jansson"
+RDEPENDS_${PN} = "jansson"
