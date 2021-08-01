@@ -12,23 +12,4 @@ S = "${WORKDIR}/src"
 inherit autotools
 
 DEPENDS = "jansson"
-
-
-
 RDEPENDS_${PN} = "jansson"
-FILES_${PN} += "${includedir}/*.h"
-FILES_${PN} += "${B}${libdir}/libjanssonutil.a"
-
-# do_install_append () {
-#     bbwarn "${D}"
-#     bbwarn "${includedir}"
-#     bbwarn "${libdir}"
-
-#     # header
-#     install -d 755 ${D}${includedir}/jansslonutil
-# 	install -m 644 ${S}/include/writejsonfile.h ${D}${includedir}/jansslonutil/writejsonfile.h
-
-#     # library
-#     install -d 755 ${D}${libdir}
-# 	install -m 644 ${B}/libjanssonutil.a ${B}${libdir}
-# }
